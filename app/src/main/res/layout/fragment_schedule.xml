@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.schedule.ScheduleFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabContentStart="56dp"
+        app:tabGravity="start"
+        app:tabMode="scrollable"
+        android:id="@+id/tabLayout">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/theme"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:layout_marginTop="60dp">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/tasks_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="145dp"/>
+
+<!--<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:layout_marginTop="120dp"
+    android:layout_marginBottom="70dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/tasks"
+        android:layout_margin="18dp"
+        android:showDividers="middle"
+        android:divider="@drawable/divider">
+
+    </LinearLayout>
+
+
+</ScrollView>-->
+
+
+</RelativeLayout>
